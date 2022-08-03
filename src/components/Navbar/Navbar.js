@@ -8,6 +8,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
 } from "./NavbarStyles";
 
 const Navbar = () => {
@@ -23,7 +25,19 @@ const Navbar = () => {
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="discover">Cases</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="signup">Reviews</NavLinks>
+            </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
