@@ -1,11 +1,12 @@
 import React from "react";
+import { Nav, NavbarContainer, NavLogo } from "./NavbarStyles";
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>S</NavLogo>
+          <NavLogo to="/">Studi</NavLogo>
         </NavbarContainer>
       </Nav>
     </>
