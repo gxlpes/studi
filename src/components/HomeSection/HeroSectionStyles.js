@@ -55,13 +55,12 @@ export const HeroH1 = styled.h1`
   font-weight: 900;
   text-align: left;
   line-height: 4rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.16rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
-    letter-spacing: -0.1rem;
+    font-size: 25px;
     line-height: 3rem;
-    width: 100%;
+    white-space: normal;
   }
 
   @media screen and (max-width: 480px) {
