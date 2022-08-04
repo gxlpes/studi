@@ -1,18 +1,20 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
 import { useState } from "react";
+import HeroSection from "../components/HomeSection/HeroSection";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const toggleOpenHandler = () => {
-    setIsOpen(!isOpen);
+    setIsClicked(!isClicked);
   };
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggleOpenHandler} />
+      <Sidebar isOpen={isClicked} toggle={toggleOpenHandler} />
       <Navbar toggle={toggleOpenHandler} />
+      <HeroSection />
     </>
   );
 };
