@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  height: 800px;
+  height: 40rem;
   z-index: 1;
 `;
 
@@ -28,7 +28,7 @@ export const SVGContainer = styled.svg`
 `;
 
 export const SVGImage = styled(SVGFile)`
-  width: clamp(1rem + 15vw, 15rem + 25vw, 40rem + 50vw);
+  width: clamp(1rem + 15vw, 10rem + 25vw, 40rem + 50vw);
 
   @media screen (max-width: 768px) {
     margin-top: -10rem;
@@ -38,7 +38,6 @@ export const SVGImage = styled(SVGFile)`
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  margin-top: -5rem;
   padding: 8px 24px;
   display: flex;
   flex-direction: row-reverse;
@@ -53,6 +52,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   color: #23272f;
   font-size: 48px;
+  font-weight: 900;
   text-align: left;
   line-height: 4rem;
   letter-spacing: -0.2rem;
