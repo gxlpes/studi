@@ -1,7 +1,6 @@
 import { ReactComponent as SVGFile } from "../../images/HeroImage.svg";
 import {
   HeroContainer,
-  HeroBg,
   SVGImage,
   HeroContent,
   HeroH1,
@@ -22,16 +21,18 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        <SVGImage>
-          <SVGFile></SVGFile>
-        </SVGImage>
-      </HeroBg>
       <HeroContent>
+        <SVGFile />
         <HeroH1>Learn new techniques to study better.</HeroH1>
         <HeroP>Sign up for a new account today and try our services!</HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
