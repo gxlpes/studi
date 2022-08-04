@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -12,13 +13,13 @@ import {
   NavBtnLink,
 } from "./NavbarStyles";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Studi</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
