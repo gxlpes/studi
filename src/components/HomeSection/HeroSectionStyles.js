@@ -59,7 +59,9 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
+    letter-spacing: -0.1rem;
     line-height: 3rem;
+    width: 100%;
   }
 
   @media screen and (max-width: 480px) {

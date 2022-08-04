@@ -4,6 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   height: 83px;
+  width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -20,10 +21,11 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 83px;
+  align-items: center;
   width: 100%;
+  height: 83px;
   z-index: 1;
-  padding: 0 5rem;
+  padding: 0 2rem;
   max-width: 1100px; ;
 `;
 
