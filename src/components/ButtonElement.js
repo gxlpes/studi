@@ -7,7 +7,7 @@ export const Button = styled(Link)`
   background: ${({ primary }) => (primary ? "#3F90A8" : "	#EC925D")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "#3f3f3f" : "#fff")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "14px")};
   outline: none;
   border: none;

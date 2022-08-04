@@ -49,7 +49,7 @@ export const MobileIcon = styled.div`
     transform: translate(500%, 65%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: #23272f;
   }
 `;
 
@@ -85,15 +85,6 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 7px;
   white-space: nowrap;
@@ -116,4 +107,8 @@ export const NavBtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
