@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { ReactComponent as SVGFile } from "../../images/HeroImage.svg";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -12,8 +12,18 @@ export const HeroContainer = styled.div`
   z-index: 1;
 `;
 
-export const SVGImage = styled.svg`
-  width: 1rem;
+export const SVGImage = styled(SVGFile)`
+  width: 40rem;
+`;
+
+export const HeroText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const SVGContainer = styled.svg`
+  width: 100%;
   height: auto;
   object-fit: cover;
   background-color: white;
@@ -24,7 +34,7 @@ export const HeroContent = styled.div`
   max-width: 1200px;
   padding: 8px 24px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
 `;
 
@@ -32,6 +42,7 @@ export const HeroH1 = styled.h1`
   color: #23272f;
   font-size: 48px;
   text-align: left;
+  letter-spacing: -0.2rem;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -48,6 +59,7 @@ export const HeroP = styled.p`
   font-size: 24px;
   text-align: left;
   max-width: 600px;
+  letter-spacing: -0.1rem;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

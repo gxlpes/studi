@@ -3,9 +3,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background-color: green;
   height: 83px;
-  /* margin-top: -83px; */
   justify-content: center;
   display: flex;
   align-items: center;
@@ -30,10 +28,11 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRouter)`
-  color: purple;
+  color: #ec925d;
+  letter-spacing: -0.05rem;
   justify-content: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -70,7 +69,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: #3f3f3f;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -80,6 +79,9 @@ export const NavLinks = styled(LinkScroll)`
 
   &.active {
     border-bottom: 3px solid purple;
+  }
+  &:hover {
+    color: #3f90a8;
   }
 `;
 
@@ -94,19 +96,24 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 7px;
-  background: pink;
-  padding: 10px 22px;
   white-space: nowrap;
-  font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  color: #fff;
 
   &hover {
     transition: all 0.2 ease-in-out;
     background-color: #fff;
     color: #fafafa;
   }
+`;
+
+export const NavBtnWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
