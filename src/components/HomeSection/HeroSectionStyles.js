@@ -18,6 +18,10 @@ export const HeroText = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+  }
 `;
 
 export const SVGContainer = styled.svg`
@@ -30,7 +34,7 @@ export const SVGContainer = styled.svg`
 export const SVGImage = styled(SVGFile)`
   width: clamp(1rem + 15vw, 10rem + 25vw, 40rem + 50vw);
 
-  @media screen (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     margin-top: -10rem;
   }
 `;
@@ -45,7 +49,7 @@ export const HeroContent = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
 `;
 
@@ -55,16 +59,11 @@ export const HeroH1 = styled.h1`
   font-weight: 900;
   text-align: left;
   line-height: 4rem;
-  letter-spacing: -0.16rem;
 
   @media screen and (max-width: 768px) {
     font-size: 25px;
-    line-height: 3rem;
+    line-height: 2.5rem;
     white-space: normal;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
   }
 `;
 

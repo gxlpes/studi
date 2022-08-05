@@ -33,6 +33,7 @@ const HeroSection = () => {
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
+              big="true"
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
